@@ -1,0 +1,223 @@
+[
+  {
+    "trace_id": "36cd1f13-cda3-4c98-ba43-d0dec9e3964e",
+    "task_id": "ui-001",
+    "attachment": "frontend@0.1.0",
+    "session_id": "default",
+    "route": "inspect_repo -> implement -> typecheck -> tests",
+    "tools_enabled": [
+      "filesystem",
+      "browser",
+      "test_runner",
+      "typecheck",
+      "visual_verify",
+      "accessibility"
+    ],
+    "verifiers": [
+      "typecheck",
+      "tests"
+    ],
+    "output_chars": 108,
+    "latency_ms": 0.069,
+    "verification": {
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "typecheck": {
+          "passed": true,
+          "reason": "POC textual contract"
+        },
+        "tests": {
+          "passed": true,
+          "reason": "POC textual contract"
+        }
+      }
+    },
+    "state_calls": 1
+  },
+  {
+    "trace_id": "4f23c79e-9a2f-4e77-a151-9f848b4c7d67",
+    "task_id": "ui-002",
+    "attachment": "frontend@0.1.0",
+    "session_id": "default",
+    "route": "reproduce -> isolate -> patch -> regression",
+    "tools_enabled": [
+      "filesystem",
+      "browser",
+      "test_runner",
+      "typecheck",
+      "visual_verify",
+      "accessibility"
+    ],
+    "verifiers": [
+      "tests",
+      "typecheck"
+    ],
+    "output_chars": 108,
+    "latency_ms": 0.032,
+    "verification": {
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "tests": {
+          "passed": true,
+          "reason": "POC textual contract"
+        },
+        "typecheck": {
+          "passed": true,
+          "reason": "POC textual contract"
+        }
+      }
+    },
+    "state_calls": 2
+  },
+  {
+    "trace_id": "45485cb2-bf93-4d5f-aa02-ee9578beaaa5",
+    "task_id": "ui-003",
+    "attachment": "frontend@0.1.0",
+    "session_id": "default",
+    "route": "inspect_repo -> implement -> render -> visual_verify",
+    "tools_enabled": [
+      "filesystem",
+      "browser",
+      "test_runner",
+      "typecheck",
+      "visual_verify",
+      "accessibility"
+    ],
+    "verifiers": [
+      "typecheck",
+      "visual_diff",
+      "a11y"
+    ],
+    "output_chars": 108,
+    "latency_ms": 0.239,
+    "verification": {
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "typecheck": {
+          "passed": true,
+          "reason": "POC textual contract"
+        },
+        "visual_diff": {
+          "passed": true,
+          "reason": "sinal de tarefa visual"
+        },
+        "a11y": {
+          "passed": true,
+          "reason": "heurística de acessibilidade"
+        }
+      }
+    },
+    "state_calls": 3
+  },
+  {
+    "trace_id": "07f4319d-2e83-4591-8bc8-6fc29b6fa698",
+    "task_id": "ui-004",
+    "attachment": "frontend@0.1.0",
+    "session_id": "default",
+    "route": "inspect_semantics -> patch -> keyboard_check -> a11y_verify",
+    "tools_enabled": [
+      "filesystem",
+      "browser",
+      "test_runner",
+      "typecheck",
+      "visual_verify",
+      "accessibility"
+    ],
+    "verifiers": [
+      "a11y",
+      "tests"
+    ],
+    "output_chars": 108,
+    "latency_ms": 0.048,
+    "verification": {
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "a11y": {
+          "passed": true,
+          "reason": "heurística de acessibilidade"
+        },
+        "tests": {
+          "passed": true,
+          "reason": "POC textual contract"
+        }
+      }
+    },
+    "state_calls": 4
+  },
+  {
+    "trace_id": "516bd6d3-4027-4b7c-9617-f29ebe3cb1c4",
+    "task_id": "ui-005",
+    "attachment": "frontend@0.1.0",
+    "session_id": "default",
+    "route": "measure -> hypothesize -> change -> remeasure",
+    "tools_enabled": [
+      "filesystem",
+      "browser",
+      "test_runner",
+      "typecheck",
+      "visual_verify",
+      "accessibility"
+    ],
+    "verifiers": [
+      "tests",
+      "typecheck"
+    ],
+    "output_chars": 108,
+    "latency_ms": 0.032,
+    "verification": {
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "tests": {
+          "passed": true,
+          "reason": "POC textual contract"
+        },
+        "typecheck": {
+          "passed": true,
+          "reason": "POC textual contract"
+        }
+      }
+    },
+    "state_calls": 5
+  },
+  {
+    "trace_id": "ba40db7a-3066-4a08-a30a-c17e10d23e8f",
+    "task_id": "ui-006",
+    "attachment": "frontend@0.1.0",
+    "session_id": "default",
+    "route": "inspect_repo -> implement -> typecheck -> tests",
+    "tools_enabled": [
+      "filesystem",
+      "browser",
+      "test_runner",
+      "typecheck",
+      "visual_verify",
+      "accessibility"
+    ],
+    "verifiers": [
+      "typecheck",
+      "tests"
+    ],
+    "output_chars": 108,
+    "latency_ms": 0.02,
+    "verification": {
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "typecheck": {
+          "passed": true,
+          "reason": "POC textual contract"
+        },
+        "tests": {
+          "passed": true,
+          "reason": "POC textual contract"
+        }
+      }
+    },
+    "state_calls": 6
+  }
+]

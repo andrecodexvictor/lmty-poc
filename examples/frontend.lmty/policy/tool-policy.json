@@ -1,0 +1,10 @@
+{
+  "allowed": ["filesystem", "browser", "test_runner", "typecheck", "visual_verify", "accessibility"],
+  "required_by_route": {
+    "visual_ui": ["browser", "visual_verify"],
+    "bug": ["test_runner"],
+    "performance": ["test_runner"],
+    "accessibility": ["accessibility"],
+    "implementation": ["typecheck", "test_runner"]
+  }
+}

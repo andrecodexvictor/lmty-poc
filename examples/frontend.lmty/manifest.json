@@ -1,0 +1,14 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "abi": "lmty-attachment/0.1",
+  "minimum_access": "B0",
+  "preferred_backend": "behavioral-stateful",
+  "fallback": "generalist",
+  "context_budget": 420,
+  "max_tool_calls": 8,
+  "capabilities": ["filesystem", "browser", "test_runner", "typecheck", "visual_verify", "accessibility"],
+  "verification": ["typecheck", "tests", "a11y"],
+  "compatibility": {"provider": "*", "model_family": "frontier-reasoning"},
+  "policy": {"confidence_threshold": 0.86, "retry_policy": "verify_then_retry"}
+}

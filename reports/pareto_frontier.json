@@ -1,0 +1,20 @@
+[
+  {
+    "candidate": "frontend-compact",
+    "quality": 1.0,
+    "reliability": 1.0,
+    "tokens": 350,
+    "latency": 0.05,
+    "complexity": 5.4,
+    "reward": 0.5709
+  },
+  {
+    "candidate": "baseline-general",
+    "quality": 1.0,
+    "reliability": 1.0,
+    "tokens": 948,
+    "latency": 0.03,
+    "complexity": 1.2,
+    "reward": 0.314
+  }
+]

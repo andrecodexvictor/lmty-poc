@@ -1,0 +1,15 @@
+{
+  "tasks": 6,
+  "quality_mean": 1.0,
+  "reliability": 1.0,
+  "output_chars_mean": 108.0,
+  "latency_ms_mean": 0.073,
+  "routes": {
+    "ui-001": "inspect_repo -> implement -> typecheck -> tests",
+    "ui-002": "reproduce -> isolate -> patch -> regression",
+    "ui-003": "inspect_repo -> implement -> render -> visual_verify",
+    "ui-004": "inspect_semantics -> patch -> keyboard_check -> a11y_verify",
+    "ui-005": "measure -> hypothesize -> change -> remeasure",
+    "ui-006": "inspect_repo -> implement -> typecheck -> tests"
+  }
+}

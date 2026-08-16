@@ -1,0 +1,10 @@
+{
+  "by_route": {
+    "visual_ui": ["typecheck", "visual_diff", "a11y"],
+    "bug": ["tests", "typecheck"],
+    "performance": ["tests", "typecheck"],
+    "accessibility": ["a11y", "tests"],
+    "implementation": ["typecheck", "tests"],
+    "general": ["typecheck"]
+  }
+}

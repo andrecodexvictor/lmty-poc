@@ -1,0 +1,10 @@
+{
+  "confidence_threshold": 0.86,
+  "retry_policy": "verify_then_retry",
+  "invariants": [
+    "typecheck_before_finalize",
+    "run_scoped_tests",
+    "preserve_project_conventions",
+    "measure_before_performance_change"
+  ]
+}

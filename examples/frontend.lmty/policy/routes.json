@@ -1,0 +1,8 @@
+{
+  "visual_ui": ["inspect_repo", "implement", "render", "visual_verify"],
+  "bug": ["reproduce", "isolate", "patch", "regression"],
+  "performance": ["measure", "hypothesize", "change", "remeasure"],
+  "accessibility": ["inspect_semantics", "patch", "keyboard_check", "a11y_verify"],
+  "implementation": ["inspect_repo", "implement", "typecheck", "tests"],
+  "general": ["inspect_repo", "plan", "implement", "verify"]
+}
