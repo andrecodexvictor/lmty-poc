@@ -37,6 +37,12 @@ tests/               testes unitários
 reports/             cálculos, traces e relatórios reproduzíveis
 ```
 
+## Extensões nativas e benchmarks
+
+Os kernels leves em `native/` possuem implementações equivalentes em Rust e C. Eles podem ser testados com `make -C native c-test` e `make -C native rust-test`. Os casos de uso do framework e da MAL são definidos em `tests/use_cases.json` e executados por `scripts/run_use_cases.py`. A fronteira Pareto multidimensional é gerada por `scripts/run_pareto.py`.
+
+O benchmark de coding público usa os prompts do HumanEval obtidos em `vendor/human-eval`. O comando `PYTHONPATH=. python3 scripts/run_public_coding_eval.py --limit 5` chama o modelo configurado e faz análise estática segura. A execução do código gerado permanece desabilitada até existir um sandbox robusto.
+
 ## Política de complexidade
 
 O projeto adota como meta operacional **complexidade ciclomática McCabe máxima 2 por função**. O auditor AST não conta compreensões como ramificações independentes; conta decisões condicionais, loops, handlers de exceção e operadores booleanos. O resultado deve ser verificado antes de cada commit.

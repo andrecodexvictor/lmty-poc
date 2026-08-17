@@ -1,0 +1,8 @@
+[
+  {"id":"framework-001","layer":"framework","name":"classificação visual","task":"Reproduzir layout visual responsivo","kind":"visual_ui","expected_route":"visual_ui","required_tools":["browser","visual_verify"]},
+  {"id":"framework-002","layer":"framework","name":"reparo de bug","task":"Corrigir bug de hydration","kind":"bug","expected_route":"bug","required_tools":["test_runner"]},
+  {"id":"framework-003","layer":"framework","name":"controle de performance","task":"Medir performance de bundle","kind":"performance","expected_route":"performance","required_tools":["test_runner"]},
+  {"id":"mal-001","layer":"MAL","name":"estado por sessão","task":"Continuar diagnóstico após uma primeira chamada","kind":"bug","expected_route":"bug","required_tools":["test_runner"]},
+  {"id":"mal-002","layer":"MAL","name":"capability boundary","task":"Executar tarefa visual com ferramentas limitadas","kind":"visual_ui","expected_route":"visual_ui","required_tools":["visual_verify"]},
+  {"id":"mal-003","layer":"MAL","name":"fallback generalista","task":"Explicar conceito sem domínio específico","kind":"general","expected_route":"general","required_tools":[]}
+]

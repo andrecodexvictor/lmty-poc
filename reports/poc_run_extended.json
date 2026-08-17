@@ -1,0 +1,96 @@
+{
+  "benchmark": {
+    "tasks": 6,
+    "quality_mean": 1.0,
+    "reliability": 1.0,
+    "output_chars_mean": 108.0,
+    "latency_ms_mean": 0.059,
+    "routes": {
+      "ui-001": "inspect_repo -> implement -> typecheck -> tests",
+      "ui-002": "reproduce -> isolate -> patch -> regression",
+      "ui-003": "inspect_repo -> implement -> render -> visual_verify",
+      "ui-004": "inspect_semantics -> patch -> keyboard_check -> a11y_verify",
+      "ui-005": "measure -> hypothesize -> change -> remeasure",
+      "ui-006": "inspect_repo -> implement -> typecheck -> tests"
+    }
+  },
+  "scores": [
+    {
+      "candidate": "baseline-general",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 948,
+      "latency": 0.02,
+      "complexity": 1.2,
+      "reward": 0.314
+    },
+    {
+      "candidate": "frontend-balanced",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 560,
+      "latency": 0.02,
+      "complexity": 6.8,
+      "reward": 0.452
+    },
+    {
+      "candidate": "frontend-compact",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 350,
+      "latency": 0.02,
+      "complexity": 5.4,
+      "reward": 0.571
+    }
+  ],
+  "pareto": [
+    {
+      "candidate": "frontend-compact",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 350,
+      "latency": 0.02,
+      "complexity": 5.4,
+      "reward": 0.571
+    },
+    {
+      "candidate": "baseline-general",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 948,
+      "latency": 0.02,
+      "complexity": 1.2,
+      "reward": 0.314
+    }
+  ],
+  "artifact": {
+    "compiler": "lmty-poc-0.1",
+    "selected": {
+      "candidate": "frontend-compact",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 350,
+      "latency": 0.02,
+      "complexity": 5.4,
+      "reward": 0.571
+    },
+    "policy": {
+      "name": "frontend-compact",
+      "context_budget": 280,
+      "max_tool_calls": 4,
+      "retry_policy": "verify_then_retry",
+      "required_tools": [
+        "filesystem",
+        "test_runner",
+        "typecheck"
+      ],
+      "route_overrides": {
+        "visual_ui": [
+          "inspect_repo",
+          "render",
+          "visual_verify"
+        ]
+      }
+    }
+  }
+}

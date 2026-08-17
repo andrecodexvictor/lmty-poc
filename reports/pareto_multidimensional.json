@@ -1,0 +1,31 @@
+{
+  "objectives": {
+    "maximize": [
+      "quality",
+      "reliability"
+    ],
+    "minimize": [
+      "tokens",
+      "latency",
+      "complexity"
+    ]
+  },
+  "frontier": [
+    {
+      "name": "baseline-general",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 948,
+      "latency": 0.02,
+      "complexity": 1.2
+    },
+    {
+      "name": "frontend-compact",
+      "quality": 1.0,
+      "reliability": 1.0,
+      "tokens": 350,
+      "latency": 0.02,
+      "complexity": 5.4
+    }
+  ]
+}

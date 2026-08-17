@@ -20,5 +20,13 @@ jobs:
           python -c "import json; d=json.load(open('reports/complexity_audit.json')); assert d['max_complexity'] <= 2, d['over_target']"
       - name: Reproducible POC run
         run: PYTHONPATH=. python scripts/run_poc.py
+      - name: Framework and MAL use cases
+        run: PYTHONPATH=. python scripts/run_use_cases.py
+      - name: Native C kernel
+        run: make -C native c-test
+      - name: Native Rust kernel
+        run: make -C native rust-test
+      - name: Multidimensional Pareto frontier
+        run: PYTHONPATH=. python scripts/run_pareto.py
       - name: Verify reports
-        run: test -s reports/POC_TECHNICAL_REPORT.md && test -s reports/benchmark.json && test -s reports/optimizer_scores.json
+        run: test -s reports/POC_TECHNICAL_REPORT.md && test -s reports/EXTENDED_TEST_REPORT.md && test -s reports/benchmark.json && test -s reports/optimizer_scores.json

@@ -1,0 +1,54 @@
+{
+  "total": 6,
+  "passed": 6,
+  "results": [
+    {
+      "id": "framework-001",
+      "layer": "framework",
+      "route_ok": true,
+      "tools_ok": true,
+      "verification": true,
+      "trace_id": "55c5b057-2dd4-410e-8163-b76fd6509d14"
+    },
+    {
+      "id": "framework-002",
+      "layer": "framework",
+      "route_ok": true,
+      "tools_ok": true,
+      "verification": true,
+      "trace_id": "9ec0f793-0844-430f-a43b-f3314f6aca9a"
+    },
+    {
+      "id": "framework-003",
+      "layer": "framework",
+      "route_ok": true,
+      "tools_ok": true,
+      "verification": true,
+      "trace_id": "170cb773-823b-4bf1-9e7a-fdddb5b6da53"
+    },
+    {
+      "id": "mal-001",
+      "layer": "MAL",
+      "route_ok": true,
+      "tools_ok": true,
+      "verification": true,
+      "trace_id": "a6c4e2bf-6d09-45ab-944a-39a9abb550d0"
+    },
+    {
+      "id": "mal-002",
+      "layer": "MAL",
+      "route_ok": true,
+      "tools_ok": true,
+      "verification": true,
+      "trace_id": "0a3ccaba-3665-4b3a-bb20-ef624fe0c7c3"
+    },
+    {
+      "id": "mal-003",
+      "layer": "MAL",
+      "route_ok": true,
+      "tools_ok": true,
+      "verification": true,
+      "trace_id": "f49e9443-b9b6-44a4-8a2d-963b7a6b11a2"
+    }
+  ]
+}

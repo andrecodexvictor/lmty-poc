@@ -1,0 +1,267 @@
+{
+  "target": 2,
+  "functions": 43,
+  "max_complexity": 2,
+  "mean_complexity": 1.233,
+  "over_target": [],
+  "details": [
+    {
+      "file": "lmty/cli.py",
+      "function": "_parser",
+      "line": 14,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/cli.py",
+      "function": "_infer",
+      "line": 25,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/cli.py",
+      "function": "_benchmark",
+      "line": 31,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/cli.py",
+      "function": "main",
+      "line": 38,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/optimizer.py",
+      "function": "_mean",
+      "line": 33,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/optimizer.py",
+      "function": "_operational_metrics",
+      "line": 37,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/optimizer.py",
+      "function": "_reward",
+      "line": 45,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/optimizer.py",
+      "function": "score_candidate",
+      "line": 53,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/optimizer.py",
+      "function": "_dominates",
+      "line": 62,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/compiler/optimizer.py",
+      "function": "pareto_select",
+      "line": 68,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/optimizer.py",
+      "function": "compile_policy",
+      "line": 73,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/pareto.py",
+      "function": "_better_or_equal",
+      "line": 17,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/pareto.py",
+      "function": "_strictly_better",
+      "line": 22,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/compiler/pareto.py",
+      "function": "dominates",
+      "line": 27,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/compiler/pareto.py",
+      "function": "frontier",
+      "line": 31,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/evals/benchmark.py",
+      "function": "_mean",
+      "line": 19,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/evals/benchmark.py",
+      "function": "_summary",
+      "line": 23,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/evals/benchmark.py",
+      "function": "evaluate_runtime",
+      "line": 32,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "__init__",
+      "line": 13,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "_default_model",
+      "line": 22,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "_session",
+      "line": 25,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "_generate",
+      "line": 28,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "_repair",
+      "line": 33,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "_trace",
+      "line": 38,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "_value_or",
+      "line": 56,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "infer",
+      "line": 59,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/engine.py",
+      "function": "export_traces",
+      "line": 70,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/package.py",
+      "function": "_read_json",
+      "line": 14,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/package.py",
+      "function": "_parse_json",
+      "line": 20,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/package.py",
+      "function": "_manifest",
+      "line": 27,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/package.py",
+      "function": "load_package",
+      "line": 41,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/policy.py",
+      "function": "__init__",
+      "line": 10,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/policy.py",
+      "function": "classify",
+      "line": 16,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/policy.py",
+      "function": "_enabled_tools",
+      "line": 28,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/policy.py",
+      "function": "decide",
+      "line": 34,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/policy.py",
+      "function": "_evidence_block",
+      "line": 46,
+      "complexity": 2
+    },
+    {
+      "file": "lmty/runtime/policy.py",
+      "function": "_join_or",
+      "line": 52,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/policy.py",
+      "function": "compile_context",
+      "line": 55,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/verification.py",
+      "function": "_nonempty",
+      "line": 9,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/verification.py",
+      "function": "_a11y",
+      "line": 13,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/verification.py",
+      "function": "_visual",
+      "line": 18,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/verification.py",
+      "function": "_security",
+      "line": 22,
+      "complexity": 1
+    },
+    {
+      "file": "lmty/runtime/verification.py",
+      "function": "verify",
+      "line": 40,
+      "complexity": 1
+    }
+  ]
+}

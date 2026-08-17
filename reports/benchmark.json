@@ -3,7 +3,7 @@
   "quality_mean": 1.0,
   "reliability": 1.0,
   "output_chars_mean": 108.0,
-  "latency_ms_mean": 0.073,
+  "latency_ms_mean": 0.059,
   "routes": {
     "ui-001": "inspect_repo -> implement -> typecheck -> tests",
     "ui-002": "reproduce -> isolate -> patch -> regression",
