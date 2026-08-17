@@ -1,0 +1,141 @@
+{
+  "session": "mal-live-demo",
+  "attachment": "frontend@0.1.0",
+  "capability_boundary": {
+    "available_tools": [
+      "filesystem",
+      "test_runner",
+      "typecheck"
+    ],
+    "browser_enabled": false,
+    "test_runner_enabled": true
+  },
+  "calls": [
+    {
+      "task_id": "mal-live-001",
+      "route": "reproduce -> isolate -> patch -> regression",
+      "tools": [
+        "filesystem",
+        "test_runner",
+        "typecheck"
+      ],
+      "verification": {
+        "passed": true,
+        "score": 1.0,
+        "checks": {
+          "tests": {
+            "passed": true,
+            "reason": "POC textual contract"
+          },
+          "typecheck": {
+            "passed": true,
+            "reason": "POC textual contract"
+          }
+        }
+      },
+      "trace_id": "94ed68c5-0f3c-46de-b517-ea9062847954"
+    },
+    {
+      "task_id": "mal-live-002",
+      "route": "reproduce -> isolate -> patch -> regression",
+      "tools": [
+        "filesystem",
+        "test_runner",
+        "typecheck"
+      ],
+      "verification": {
+        "passed": true,
+        "score": 1.0,
+        "checks": {
+          "tests": {
+            "passed": true,
+            "reason": "POC textual contract"
+          },
+          "typecheck": {
+            "passed": true,
+            "reason": "POC textual contract"
+          }
+        }
+      },
+      "trace_id": "295ccecf-61e1-48a3-9c8e-42a0fe689487"
+    }
+  ],
+  "persistent_state": {
+    "calls": 2,
+    "attachment": "frontend"
+  },
+  "invariants": {
+    "same_session": true,
+    "browser_not_granted": true,
+    "verification_passed": true,
+    "trace_count": 2
+  },
+  "traces": [
+    {
+      "trace_id": "94ed68c5-0f3c-46de-b517-ea9062847954",
+      "task_id": "mal-live-001",
+      "attachment": "frontend@0.1.0",
+      "session_id": "mal-live-demo",
+      "route": "reproduce -> isolate -> patch -> regression",
+      "tools_enabled": [
+        "filesystem",
+        "test_runner",
+        "typecheck"
+      ],
+      "verifiers": [
+        "tests",
+        "typecheck"
+      ],
+      "output_chars": 108,
+      "latency_ms": 0.066,
+      "verification": {
+        "passed": true,
+        "score": 1.0,
+        "checks": {
+          "tests": {
+            "passed": true,
+            "reason": "POC textual contract"
+          },
+          "typecheck": {
+            "passed": true,
+            "reason": "POC textual contract"
+          }
+        }
+      },
+      "state_calls": 1
+    },
+    {
+      "trace_id": "295ccecf-61e1-48a3-9c8e-42a0fe689487",
+      "task_id": "mal-live-002",
+      "attachment": "frontend@0.1.0",
+      "session_id": "mal-live-demo",
+      "route": "reproduce -> isolate -> patch -> regression",
+      "tools_enabled": [
+        "filesystem",
+        "test_runner",
+        "typecheck"
+      ],
+      "verifiers": [
+        "tests",
+        "typecheck"
+      ],
+      "output_chars": 108,
+      "latency_ms": 0.039,
+      "verification": {
+        "passed": true,
+        "score": 1.0,
+        "checks": {
+          "tests": {
+            "passed": true,
+            "reason": "POC textual contract"
+          },
+          "typecheck": {
+            "passed": true,
+            "reason": "POC textual contract"
+          }
+        }
+      },
+      "state_calls": 2
+    }
+  ]
+}
