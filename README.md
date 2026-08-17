@@ -50,3 +50,9 @@ O projeto adota como meta operacional **complexidade ciclomática McCabe máxima
 ## Escopo técnico
 
 O POC implementa especialização comportamental e stateful. Não afirma suporte a logits, prefixos K/V ou activation steering. Esses níveis exigem uma ABI do provedor e ficam fora do primeiro marco executável.
+
+## Evolução: LMTY Attachment Studio
+
+O POC é o núcleo executável da arquitetura. A aplicação complementar **LMTY Attachment Studio** transforma seus conceitos em uma superfície web: ingestão JSONL/CSV, compilação de artifacts `.lmty`, sessão MAL, traces, Pareto, memória externa, grafo de abstração e CLI. A documentação matemática em níveis baixo, médio e alto está no repositório do Studio, junto do critério estrutural de aceitação e dos relatórios de cenários.
+
+Essa separação é deliberada: este repositório mantém runtime, kernels C/Rust e benchmark reproduzível; o Studio gerencia e explica o ciclo de vida operacional desses componentes.
